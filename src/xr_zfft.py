@@ -11,8 +11,9 @@ libs = ['ndtypes','gumath', 'xnd','xndtools/kernel_generator','numpy/f2py/src','
 lib_dirs = [f'{site_packages}/{lib}' for lib in libs]
 system_libs = []
 
-#This is only true if you make it 
-if False:
+#This is only true if  
+make_so=True
+if make_so:
        subprocess.call(['xnd_tools', 'config',fn]) 
        input("Press Enter to continue...")
 

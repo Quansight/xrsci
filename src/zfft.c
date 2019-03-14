@@ -5,6 +5,7 @@
  */
 
 #include "fftpack.h"
+#include "zfft.h"
 
 extern void F_FUNC(zfftf,ZFFTF)(int*,double*,double*);
 extern void F_FUNC(zfftb,ZFFTB)(int*,double*,double*);
